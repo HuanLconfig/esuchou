@@ -98,3 +98,20 @@ background-attachment: fixed;"
             appKey: 'DwccUqbElgo8AwIhx8YOR1uE'
         })
     </script>
+</head>
+<body>
+<div id="div1"></div>
+<script>
+    function time() {
+        var date = new Date();
+        var hour = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+        var str = "现在时间：" + hour + "：" + minutes + "：" + seconds + ".";
+        var div1 = document.getElementById("div1");
+        div1.innerHTML = str;
+    }
+    setInterval(time,1000);
+</script>
+</body>
+</html>
